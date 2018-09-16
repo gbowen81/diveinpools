@@ -1,0 +1,3 @@
+User-agent: * Allow: /
+
+Sitemap: http://dive-in-pools.com/sitemap.xml
