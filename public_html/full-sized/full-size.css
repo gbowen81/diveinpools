@@ -1,0 +1,472 @@
+body,
+html {
+    height: 100%;
+}
+
+.header,
+html {
+    background-color: #CEECF6;
+}
+
+:root {
+    --light: #999999;
+    --dark: #333333;
+    --light-blue: #CEECF6;
+    --mid-blue: #58B2D3;
+    --dark-blue: #267DB1;
+    --smoke: rgba(0, 0, 0, .7);
+    --haze: rgba(0, 0, 0, .4);
+    --charcoal: #303030;
+    --pink: #DAC3C2;
+    --light-blue-haze: rgba(206, 236, 246, .5);
+    --dark-blue-haze: rgba(38, 55, 177, .5);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.parallax {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: #CEECF6;
+}
+
+.parallax.wave {
+    background-image: url(../img/honolulu-surf.jpg);
+    height: 300px;
+}
+
+#poolfade,
+#wavefade {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.parallax.pool {
+    background-image: url(../img/canyon_lake_pool.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+#wavefade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    color: #267DB1;
+    align-items: center;
+    z-index: 1;
+    flex-wrap: wrap;
+    border-bottom: solid 3px #DAC3C2;
+}
+
+.header a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+#headerspan {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+.brand {
+    display: inline-block
+}
+
+.description,
+.slogan {
+    display: flex;
+    text-align: center
+}
+
+.slogan {
+    justify-content: center;
+    align-items: center
+}
+
+.banner,
+.description {
+    justify-content: center
+}
+
+.slogan h1 {
+    background-color: rgba(0,0,0,.4);
+    padding: 40px;
+    border-radius: 50%;
+    margin: 0;
+    font-size: 3.5rem
+}
+
+.description {
+    align-items: center;
+    margin: 0 20px
+}
+
+.description h2 {
+    padding: 10px;
+    background-color: rgba(0,0,0,.7);
+    margin: 0;
+    border-radius: 15px
+}
+
+.description span {
+    font-style: italic
+}
+
+.header h2,
+.header span {
+    margin: 8px 16px
+}
+
+.banner {
+    display: flex;
+    background-color: #CEECF6;
+    color: #303030;
+    margin: 0;
+    padding: 20px 0;
+    border-top: solid 5px #DAC3C2;
+    border-bottom: solid 5px #DAC3C2
+}
+
+.g1 span,
+.services span {
+    background-color: rgba(0,0,0,.4)
+}
+
+.banner p {
+    font-size: 1.4rem;
+    margin: auto
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%
+}
+
+.container {
+    width: 90%
+}
+
+.header>*,
+.heading {
+    width: 100%
+}
+
+.services ul {
+    list-style-type: none
+}
+
+.category {
+    text-align: left
+}
+
+.g1,
+.heading,
+.profile>div {
+    text-align: center
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: stretch;
+}
+
+h1.services-provided {
+    width: 100%;
+    text-align: center;
+}
+
+.services-provided span {
+    background-color: rgba(0,0,0,.4);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.services h2 {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.services h2,
+.services h3,
+.services i,
+.services li,
+.services p,
+.services ul {
+    background-color: rgba(0,0,0,.4);
+    padding: 5px;
+    border-radius: 10px
+}
+
+
+.services span {
+    padding: 2px 5px;
+    border-radius: 6px
+}
+
+.services i {
+    padding: 10px
+}
+
+.cleaning {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.a-f>div {
+    margin: 10px;
+}
+
+.a-f h3 {
+    margin: 0
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+h2 {
+    font-size: 1.2rem
+}
+
+p {
+    font-size: .8rem
+}
+
+h3 {
+    font-size: 1rem
+}
+
+.header img {
+    height: 2.5rem
+}
+
+.header>* {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact, .quote, .profile {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact a,
+.contact h2 {
+    text-decoration: none;
+    color: #303030
+}
+
+.contact > div {
+    display: inline-block;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: #303030;
+    color: #DAC3C2;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.contact {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 3;
+}
+
+.quote {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    order: 1;
+}
+
+.profile {
+    order: 2;
+}
+
+.tab {
+    padding-left: 100px
+}
+
+p.tab {
+    margin-top: 15px
+}
+
+.emphasize {
+    text-decoration: underline
+}
+
+.profile>div {
+    max-width: 100%;
+    padding: 20px
+}
+
+.profile p {
+    font-size: 1rem;
+    padding-left: 100px
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 4px solid #DAC3C2;
+    max-width: 80%
+}
+
+@media all and (min-width:360px) {
+    .parallax.wave {
+        height: 324px
+    }
+}
+
+@media all and (min-width:576px) {
+    .header>* {
+        width: auto
+    }
+    .parallax.wave {
+        height: 432px
+    }
+    .cleaning {
+        width: 50%;
+    }
+    .flex-list {
+        width: 50%;
+    }
+    .quote {
+        width: 100%;
+        order: 1;
+    }
+    .contact {
+        width: 50%;
+        order: 2;
+        } 
+    .profile {
+        width: 50%;
+        order: 3;
+    }
+}
+
+@media all and (min-width:768px) {
+    h2 {
+        font-size: 1.3rem
+    }
+    h3 {
+        font-size: 1.1rem
+    }
+    p {
+        font-size: 1rem
+    }
+    .parallax.wave {
+        height: 558px
+    }
+    .slogan h1 {
+        font-size: 5rem
+    }
+    .services {
+        flex-wrap: nowrap;
+    }
+    .cleaning {
+        width: 40%;
+    }
+    .flex-list {
+        width: 60%;
+    }
+}
+
+@media all and (min-width:992px) {
+    .parallax {
+        height: 600px
+    }
+    .services {
+        padding-top: 50px;
+    }
+    .parallax.wave {
+        height: 675px
+    }
+    .slogan h1 {
+        font-size: 6rem
+    }
+    .cleaning {
+        width: 33%;
+    }
+    .flex-list {
+        width: 67%;
+    }
+    .quote {
+        width: 33.3%;
+        order: 2;
+    }
+    .contact {
+        width: 33.3%;
+        order: 1;
+        } 
+    .profile {
+        width: 33.3%;
+        order: 3;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .parallax {
+        background-attachment: fixed
+    }
+    .container {
+        width: 1000px
+    }
+    .parallax.wave {
+        background-size: cover
+    }
+    .slogan h1 {
+        font-size: 8rem
+    }
+    .cleaning {
+        width: 25%;
+    }
+    .flex-list {
+        width: 75%;
+    }
+}
+
+@media all and (min-width:1600px) {
+    .container {
+        width: 1200px
+    }
+}
